@@ -1,8 +1,10 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
+library(readr)
+library(lubridate)
 
-tech_layoffs <- read_csv("/Users/tdo/Desktop/STAT 436/ShinyApp/tech_layoffs.csv")
+tech_layoffs <- read_csv("tech_layoffs.csv")
 
 tech_layoffs <- tech_layoffs %>%
   mutate(
